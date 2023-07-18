@@ -88,8 +88,7 @@ confidence_mse = 1.96 * np.std(mse_scores) / np.sqrt(len(mse_scores))
 confidence_mae = 1.96 * np.std(mae_scores) / np.sqrt(len(mae_scores))
 
 
-
-print('Médias \nRSME {0} \nMSE {1} \nMAE {2}'.format(-1 * scores['test_neg_mean_squared_error'].mean(),
+print('Médias \nMSE {0} \nRMSE {1} \nMAE {2}'.format(-1 * scores['test_neg_mean_squared_error'].mean(),
                                                       -1 * scores['test_neg_root_mean_squared_error'].mean(),
                                                       -1 * scores['test_neg_mean_absolute_error'].mean()
                                                       ))
